@@ -53,24 +53,26 @@ Here is a brief overview of the project's directory structure and the purpose of
 │   │   └── emailController.js  # Handles incoming HTTP requests and responses.
 │   │
 │   ├── providers/
-│   │   ├── MockProviderA.js    # Simulates the primary email provider.
-│   │   └── MockProviderB.js    # Simulates the backup email provider.
+│   │   ├── mockProviderA.js    # Simulates the primary email provider.
+│   │   └── mockProviderB.js    # Simulates the backup email provider.
 │   │
 │   ├── routes/
 │   │   └── emailRoutes.js      # Defines the API endpoints (e.g., /api/send-email).
 │   │
 │   ├── services/
-│   │   └── EmailService.js     # Contains the core business logic for sending emails.
+│   │   └── emailService.js     # Contains the core business logic for sending emails.
 │   │
-│   └── utils/
-│       ├── circuitBreaker.js   # Implements the circuit breaker pattern.
-│       ├── idempotencyCache.js # Manages the cache for idempotent requests.
-│       ├── rateLimiter.js      # Provides rate limiting middleware.
-│       └── retryHandler.js     # Manages the retry with exponential backoff logic.
+│   |── utils/
+│   |   ├── rateLimiter.js      # Provides rate limiting middleware.
+│   |   └── retry.js            # Manages the retry with exponential backoff logic.
+|   |
+│   └── server.js               # The main entry point for the Express application.
 │
+|
 ├── .env.example                # Example environment variables file.
-├── .gitignore                  # Specifies files for Git to ignore.
-├── app.js                      # The main entry point for the Express application.
+├── .gitIgnore                  # Specifies files for Git to ignore.
+├── README.md                   # readme file for info and docs
+                     
 
 ```
 
