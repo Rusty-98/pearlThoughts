@@ -147,8 +147,8 @@ Retrieve the delivery status of a previously attempted email, based on the provi
 First, clone the project to your local machine using Git:
 
 ```bash
-git clone https://github.com/your-username/resilient-email-service.git
-cd resilient-email-service
+git clone https://github.com/Rusty-98/pearlThoughts.git
+cd pearlThoughts
 ```
 ### 📁 Step 2: Install Dependencies
 
@@ -269,6 +269,7 @@ You can manually simulate failures to test fallback, retries, and the circuit br
 2. Temporarily set the failure rate to `1.0` (i.e., 100% failure):
 
 ```js
+this.failureRate = 1.0;
 ```
 3. Restart the server. 
 4. Re-run the *POST /api/send-email* request.
